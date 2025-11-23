@@ -1,14 +1,23 @@
 # LAMUS: Legal Argument Mining from U.S. Caselaw
 
-## Dataset
-- 3,232 labeled sentences from Texas criminal cases
-- 6 categories: Facts, Issue, Rule/Law/Holding, Analysis, Conclusion, Others
-- 80/20 train-test split (2,585 train / 647 test)
+## Overview
+Testing multiple LLMs for legal text classification on Texas criminal case law (3,232 annotated sentences).
 
-## Best Results
-- **Llama-3-8B (Few-shot): 65.1% accuracy** (beats 62% baseline)
-- SaulLM-7B (Chain-of-thought): 45.3% accuracy
-- Gemini 2.0: 6.5% accuracy
+## Dataset Statistics
+- **Total**: 3,232 cleaned samples
+- **Train**: 2,585 (80%)
+- **Test**: 647 (20%)
+- **Categories**: Facts, Issue, Rule/Law/Holding, Analysis, Conclusion, Others
 
-## Requirements
-See requirements.txt for dependencies
+## Results Summary
+| Model | Zero-shot | Few-shot | Chain-of-thought |
+|-------|-----------|----------|------------------|
+| **Llama-3-8B** | 45.7% | **65.1%** ✅ | 59.7% |
+| SaulLM-7B | 9.7% | 39.4% | 45.3% |
+| Gemini 2.0 | 6.5% | - | - |
+
+**Baseline**: Majority class (Facts) = 62.0%
+**Best Result**: Llama-3-8B Few-shot = 65.1% (beats baseline!)
+
+## Quick Start
+```bash
