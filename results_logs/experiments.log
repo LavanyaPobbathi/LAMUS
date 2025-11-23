@@ -1,0 +1,32 @@
+nohup: ignoring input
+/home/lavanya/.local/lib/python3.10/site-packages/transformers/utils/hub.py:128: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+Running LAMUS experiments on 647 test samples
+Models to test as per professor's requirements
+
+============================================================
+Testing: Llama-3-8B
+============================================================
+Downloading shards:   0%|          | 0/4 [00:00<?, ?it/s]Downloading shards:  25%|██▌       | 1/4 [06:48<20:24, 408.33s/it]Downloading shards:  50%|█████     | 2/4 [13:42<13:43, 411.78s/it]Downloading shards:  75%|███████▌  | 3/4 [20:30<06:50, 410.22s/it]Downloading shards: 100%|██████████| 4/4 [22:12<00:00, 288.27s/it]Downloading shards: 100%|██████████| 4/4 [22:12<00:00, 333.05s/it]
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:02<00:06,  2.12s/it]Loading checkpoint shards:  50%|█████     | 2/4 [00:04<00:04,  2.20s/it]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:06<00:02,  2.12s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:06<00:00,  1.48s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:06<00:00,  1.72s/it]
+Classifying:   0%|          | 0/647 [00:00<?, ?it/s]Classifying:   0%|          | 0/647 [00:00<?, ?it/s]
+Traceback (most recent call last):
+  File "/home/lavanya/.local/lib/python3.10/site-packages/transformers/tokenization_utils_base.py", line 284, in __getattr__
+    return self.data[item]
+KeyError: 'cuda'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/lavanya/LAMUS/lamus_complete_solution/run_final_experiments.py", line 56, in test_model_simple
+    inputs = tokenizer(prompt, return_tensors="pt", max_length=512, truncation=True).cuda()
+  File "/home/lavanya/.local/lib/python3.10/site-packages/transformers/tokenization_utils_base.py", line 286, in __getattr__
+    raise AttributeError
+AttributeError
+Error: 
+
+============================================================
+SUMMARY OF RESULTS
+============================================================
+Baseline (Majority Class): 0.620
+Baseline (Random): 0.173
