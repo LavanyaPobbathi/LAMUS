@@ -10,10 +10,6 @@ Sentence: "<text>"
 Label: <Fact | Issue | Rule/Law/Holding | Analysis | Conclusion | Other>
 
 
-________________
-
-
-Examples:
 Example 1
 Sentence: "The plaintiff slipped and fell on a wet floor in the defendant’s store."
 Label: Fact
