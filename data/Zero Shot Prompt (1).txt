@@ -1,0 +1,8 @@
+﻿You are a legal reasoning expert. Your task is to read a legal sentence and identify and classify each sentence into one of the following legal argument categories:
+* Fact: Objective background details, procedural history, or evidence.
+* Issue: The legal question(s) the court must resolve.
+* Rule/Law/Holding: Stated legal rules, statutes, or holdings from precedent.
+* Analysis: Application of law to fact; legal reasoning or interpretation.
+* Conclusion: Final decisions or determinations made by the court.
+* Other: Sentences that do not fit the above categories.
+Please output a list of sentences from the paragraph, with each labeled with its category.
