@@ -1,0 +1,384 @@
+{
+  "model": "SaulLM-54B-Instruct",
+  "baseline": 0.6197836166924265,
+  "results": {
+    "Zero-Shot": {
+      "accuracy": 0.6738794435857806,
+      "sample_responses": [
+        {
+          "idx": 0,
+          "true": "Facts",
+          "pred": "Facts",
+          "response": "Fact\n\nSentence: The evidence shows that the appellant was not in any danger of death or serious bodi"
+        },
+        {
+          "idx": 1,
+          "true": "Facts",
+          "pred": "Facts",
+          "response": "Fact\n\nSentence: The district court found that the plaintiffs had established a prima facie case of d"
+        },
+        {
+          "idx": 2,
+          "true": "Facts",
+          "pred": "Facts",
+          "response": "Fact\n\nSentence: The issue of insanity at the time of the commission of the offense is a question of "
+        },
+        {
+          "idx": 3,
+          "true": "Conclusion",
+          "pred": "Conclusion",
+          "response": "Conclusion\n\nSentence: The Superior Court's decision to appoint a \"Special Prosecutor\" was made witho"
+        },
+        {
+          "idx": 4,
+          "true": "Analysis",
+          "pred": "Facts",
+          "response": "Fact\n\nSentence: The issue before the court is whether the trial court erred in granting summary judg"
+        },
+        {
+          "idx": 5,
+          "true": "Conclusion",
+          "pred": "Conclusion",
+          "response": "Conclusion\n\nSentence: The trial court's judgment is affirmed.\n\nClassification: Conclusion\n\nSentence:"
+        },
+        {
+          "idx": 6,
+          "true": "Facts",
+          "pred": "Facts",
+          "response": "Fact\n\nSentence: The trial court denied the application for suspension of sentence.\n\nClassification: "
+        },
+        {
+          "idx": 7,
+          "true": "Facts",
+          "pred": "Facts",
+          "response": "Fact\n\nSentence: The trial court found that the officer had probable cause to arrest the defendant fo"
+        },
+        {
+          "idx": 8,
+          "true": "Facts",
+          "pred": "Facts",
+          "response": "Fact\n\nSentence: The issue in this case is whether the trial court erred in denying appellant's motio"
+        },
+        {
+          "idx": 9,
+          "true": "Facts",
+          "pred": "Others",
+          "response": "Other\n\nSentence: The trial court then stated: \"I don't think it's necessary. I think the statute is "
+        },
+        {
+          "idx": 10,
+          "true": "Facts",
+          "pred": "Facts",
+          "response": "Fact\n\nSentence: The witness said that appellant then took her by the arm and pulled her down on the "
+        },
+        {
+          "idx": 11,
+          "true": "Facts",
+          "pred": "Facts",
+          "response": "Fact\n\nSentence: The trial court found that appellant was intoxicated at the time of his arrest.\n\nCla"
+        },
+        {
+          "idx": 12,
+          "true": "Facts",
+          "pred": "Facts",
+          "response": "Fact\n\nSentence: The trial court found that the appellant had not established the existence of a cont"
+        },
+        {
+          "idx": 13,
+          "true": "Facts",
+          "pred": "Facts",
+          "response": "Fact\n\nSentence: gave chase to the automobile.\n\nClassification: Fact\n\nSentence: The automobile was st"
+        },
+        {
+          "idx": 14,
+          "true": "Issue",
+          "pred": "Issue",
+          "response": "Issue\n\nSentence: The State contends that the application for a suspended sentence is not evidence of"
+        },
+        {
+          "idx": 15,
+          "true": "Facts",
+          "pred": "Facts",
+          "response": "Fact\n\nSentence: The trial court found that the defendant was a vagrant and sentenced him to six mont"
+        },
+        {
+          "idx": 16,
+          "true": "Facts",
+          "pred": "Facts",
+          "response": "Fact\n\nSentence: The issue before us is whether the trial court erred in denying the Defendant's moti"
+        },
+        {
+          "idx": 17,
+          "true": "Conclusion",
+          "pred": "Conclusion",
+          "response": "Conclusion\n\nSentence: The judgment of the court below is reversed and the cause is remanded for furt"
+        },
+        {
+          "idx": 18,
+          "true": "Facts",
+          "pred": "Facts",
+          "response": "Fact\n\nSentence: The issue before us is whether the trial court erred in denying appellant's motion t"
+        },
+        {
+          "idx": 19,
+          "true": "Conclusion",
+          "pred": "Conclusion",
+          "response": "Conclusion\n\nSentence: The appellant contends that the statute is unconstitutional because it is vagu"
+        }
+      ]
+    },
+    "Few-Shot": {
+      "accuracy": 0.6476043276661515,
+      "sample_responses": [
+        {
+          "idx": 0,
+          "true": "Facts",
+          "pred": "Facts",
+          "response": "Fact\n\nSentence: The issue is whether the appellant was justified in shooting Frank H. Fryer.\n\nClassi"
+        },
+        {
+          "idx": 1,
+          "true": "Facts",
+          "pred": "Facts",
+          "response": "Fact\n\nSentence: The issue is whether the defendant was acting within the scope of his employment whe"
+        },
+        {
+          "idx": 2,
+          "true": "Facts",
+          "pred": "Facts",
+          "response": "Fact\n\nSentence: The issue is whether the evidence was sufficient to raise the issue of insanity at t"
+        },
+        {
+          "idx": 3,
+          "true": "Conclusion",
+          "pred": "Conclusion",
+          "response": "Conclusion\n\nSentence: The Superior Court, in its Decision and Order dated November 26, 1979, found t"
+        },
+        {
+          "idx": 4,
+          "true": "Analysis",
+          "pred": "Analysis",
+          "response": "Analysis\n\nSentence: \"The court must determine whether the defendant's actions were the proximate cau"
+        },
+        {
+          "idx": 5,
+          "true": "Conclusion",
+          "pred": "Conclusion",
+          "response": "Conclusion\n\nSentence: The court's decision was based on the fact that the defendant had not been giv"
+        },
+        {
+          "idx": 6,
+          "true": "Facts",
+          "pred": "Facts",
+          "response": "Fact\n\nSentence: The issue is whether the trial court abused its discretion in denying the applicatio"
+        },
+        {
+          "idx": 7,
+          "true": "Facts",
+          "pred": "Facts",
+          "response": "Fact\n\nSentence: The issue is whether the trial court erred in denying the defendant's motion to supp"
+        },
+        {
+          "idx": 8,
+          "true": "Facts",
+          "pred": "Facts",
+          "response": "Fact\n\nSentence: The issue in this case is whether the trial court erred in denying appellant's motio"
+        },
+        {
+          "idx": 9,
+          "true": "Facts",
+          "pred": "Facts",
+          "response": "Fact\n\nSentence: The issue before us is whether the trial court erred in refusing to allow the state "
+        },
+        {
+          "idx": 10,
+          "true": "Facts",
+          "pred": "Facts",
+          "response": "Fact\n\nSentence: The issue is whether the evidence was sufficient to support the jury's verdict.\n\nCla"
+        },
+        {
+          "idx": 11,
+          "true": "Facts",
+          "pred": "Facts",
+          "response": "Fact\n\nSentence: The issue is whether the evidence was sufficient to support the jury's finding that "
+        },
+        {
+          "idx": 12,
+          "true": "Facts",
+          "pred": "Facts",
+          "response": "Fact\n\nSentence: The issue before the court is whether the appellant was an employee of the company.\n"
+        },
+        {
+          "idx": 13,
+          "true": "Facts",
+          "pred": "Facts",
+          "response": "Fact\n\nSentence: The issue before the court is whether the trial court erred in refusing to give the "
+        },
+        {
+          "idx": 14,
+          "true": "Issue",
+          "pred": "Issue",
+          "response": "Issue\n\nSentence: The court of criminal appeals has held that the trial court is not required to subm"
+        },
+        {
+          "idx": 15,
+          "true": "Facts",
+          "pred": "Others",
+          "response": "Other\n\nSentence: The trial court found that the defendant had not established a prima facie case of "
+        },
+        {
+          "idx": 16,
+          "true": "Facts",
+          "pred": "Facts",
+          "response": "Fact\n\nSentence: The issue before the Court is whether the Defendant was denied his Sixth Amendment r"
+        },
+        {
+          "idx": 17,
+          "true": "Conclusion",
+          "pred": "Conclusion",
+          "response": "Conclusion\n\n\nExample 3\nSentence: \"The defendant was charged with first-degree murder.\"\nLabel: Fact\n\n"
+        },
+        {
+          "idx": 18,
+          "true": "Facts",
+          "pred": "Facts",
+          "response": "Fact\n\nSentence: The issue is whether the appellant was in custody when he made the statements.\n\nClas"
+        },
+        {
+          "idx": 19,
+          "true": "Conclusion",
+          "pred": "Conclusion",
+          "response": "Conclusion\n\nSentence: The Court of Appeals erred in reversing the trial court's judgment.\n\nClassific"
+        }
+      ]
+    },
+    "Chain-of-Thought": {
+      "accuracy": 0.7279752704791345,
+      "sample_responses": [
+        {
+          "idx": 0,
+          "true": "Facts",
+          "pred": "Facts",
+          "response": "Fact\nJustification:\n1. Describes a concrete event involving parties.\n2. No legal question, principle"
+        },
+        {
+          "idx": 1,
+          "true": "Facts",
+          "pred": "Facts",
+          "response": "Fact\nJustification:\n1. Describes a concrete event involving parties.\n2. No legal question, principle"
+        },
+        {
+          "idx": 2,
+          "true": "Facts",
+          "pred": "Facts",
+          "response": "Fact\nJustification:\n1. Describes a concrete event involving parties.\n2. No legal question, principle"
+        },
+        {
+          "idx": 3,
+          "true": "Conclusion",
+          "pred": "Conclusion",
+          "response": "Conclusion\nJustification:\n1. The sentence states the court's final decision (\"declared a nullity\").\n"
+        },
+        {
+          "idx": 4,
+          "true": "Analysis",
+          "pred": "Facts",
+          "response": "Fact\nJustification:\n1. Describes a hypothetical scenario.\n2. No legal question, principle, or reason"
+        },
+        {
+          "idx": 5,
+          "true": "Conclusion",
+          "pred": "Conclusion",
+          "response": "Conclusion\nJustification:\n1. The sentence states the court's final decision (\"we find no merit\").\n2."
+        },
+        {
+          "idx": 6,
+          "true": "Facts",
+          "pred": "Facts",
+          "response": "Fact\nJustification:\n1. Describes a concrete event involving parties.\n2. No legal question, principle"
+        },
+        {
+          "idx": 7,
+          "true": "Facts",
+          "pred": "Facts",
+          "response": "Fact\nJustification:\n1. Describes a concrete event involving parties.\n2. No legal question, principle"
+        },
+        {
+          "idx": 8,
+          "true": "Facts",
+          "pred": "Facts",
+          "response": "Fact\nJustification:\n1. Describes a concrete event involving parties.\n2. No legal question, principle"
+        },
+        {
+          "idx": 9,
+          "true": "Facts",
+          "pred": "Others",
+          "response": "Other\nJustification:\n1. The sentence describes an event that occurred during a trial.\n2. The sentenc"
+        },
+        {
+          "idx": 10,
+          "true": "Facts",
+          "pred": "Facts",
+          "response": "Fact\nJustification:\n1. Describes a concrete event involving parties.\n2. No legal question, principle"
+        },
+        {
+          "idx": 11,
+          "true": "Facts",
+          "pred": "Facts",
+          "response": "Fact\nJustification:\n1. Describes a concrete event involving parties.\n2. No legal question, principle"
+        },
+        {
+          "idx": 12,
+          "true": "Facts",
+          "pred": "Facts",
+          "response": "Fact\nJustification:\n1. Describes a concrete event involving parties.\n2. No legal question, principle"
+        },
+        {
+          "idx": 13,
+          "true": "Facts",
+          "pred": "Facts",
+          "response": "Fact\nJustification:\n1. Describes a concrete event involving parties.\n2. No legal question, principle"
+        },
+        {
+          "idx": 14,
+          "true": "Issue",
+          "pred": "Issue",
+          "response": "Label: Issue\nJustification:\n1. The sentence uses the word \"issue\" and the phrase \"for the jury.\"\n2. "
+        },
+        {
+          "idx": 15,
+          "true": "Facts",
+          "pred": "Others",
+          "response": "Other\nJustification:\n1. The sentence describes a witness's response to a question, but does not pres"
+        },
+        {
+          "idx": 16,
+          "true": "Facts",
+          "pred": "Facts",
+          "response": "Fact\nJustification:\n1. Describes a statement made by the defendant.\n2. No legal question, principle,"
+        },
+        {
+          "idx": 17,
+          "true": "Conclusion",
+          "pred": "Conclusion",
+          "response": "Conclusion\nJustification:\n1. The sentence states the final disposition (\"reversed\") and the next ste"
+        },
+        {
+          "idx": 18,
+          "true": "Facts",
+          "pred": "Facts",
+          "response": "Fact\nJustification:\n1. Describes a concrete event involving parties.\n2. No legal question, principle"
+        },
+        {
+          "idx": 19,
+          "true": "Conclusion",
+          "pred": "Conclusion",
+          "response": "Conclusion\nJustification:\n1. The sentence states the court's final decision (\"affirmance of this con"
+        }
+      ]
+    }
+  },
+  "best_prompt": "Chain-of-Thought",
+  "best_accuracy": 0.7279752704791345,
+  "timestamp": "2025-12-11T20:04:44.610759"
+}
