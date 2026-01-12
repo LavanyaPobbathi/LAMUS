@@ -1,0 +1,499 @@
+nohup: ignoring input
+======================================================================
+LAMUS SCOTUS SENTENCE EXTRACTION
+Started: 2026-01-07 23:29:57.266864
+======================================================================
+
+📁 Found 113 JSON files
+
+[1/113] Processing: supreme_cases_all_volumes.json
+    Court: Unknown, Year: all_volumes
+    ✅ Extracted: 7123979 sentences
+
+[2/113] Processing: supreme_cases_1975.json
+    Court: Burger Court, Year: 1975
+    ✅ Extracted: 32749 sentences
+
+[3/113] Processing: supreme_cases_1970.json
+    Court: Burger Court, Year: 1970
+    ✅ Extracted: 26220 sentences
+
+[4/113] Processing: supreme_cases_1976.json
+    Court: Burger Court, Year: 1976
+    ✅ Extracted: 46552 sentences
+
+[5/113] Processing: supreme_cases_1981.json
+    Court: Burger Court, Year: 1981
+    ✅ Extracted: 49386 sentences
+
+[6/113] Processing: supreme_cases_1982.json
+    Court: Burger Court, Year: 1982
+    ✅ Extracted: 52928 sentences
+
+[7/113] Processing: supreme_cases_1983.json
+    Court: Burger Court, Year: 1983
+    ✅ Extracted: 57978 sentences
+
+[8/113] Processing: supreme_cases_1984.json
+    Court: Burger Court, Year: 1984
+    ✅ Extracted: 58812 sentences
+
+[9/113] Processing: supreme_cases_1969.json
+    Court: Burger Court, Year: 1969
+    ✅ Extracted: 30941 sentences
+
+[10/113] Processing: supreme_cases_1978.json
+    Court: Burger Court, Year: 1978
+    ✅ Extracted: 46754 sentences
+
+[11/113] Processing: supreme_cases_1977.json
+    Court: Burger Court, Year: 1977
+    ✅ Extracted: 42067 sentences
+
+[12/113] Processing: supreme_cases_1979.json
+    Court: Burger Court, Year: 1979
+    ✅ Extracted: 44917 sentences
+
+[13/113] Processing: supreme_cases_1986.json
+    Court: Burger Court, Year: 1986
+    ✅ Extracted: 52110 sentences
+
+[14/113] Processing: supreme_cases_1974.json
+    Court: Burger Court, Year: 1974
+    ✅ Extracted: 45209 sentences
+
+[15/113] Processing: supreme_cases_1973.json
+    Court: Burger Court, Year: 1973
+    ✅ Extracted: 43320 sentences
+
+[16/113] Processing: supreme_cases_1972.json
+    Court: Burger Court, Year: 1972
+    ✅ Extracted: 40417 sentences
+
+[17/113] Processing: supreme_cases_1971.json
+    Court: Burger Court, Year: 1971
+    ✅ Extracted: 34099 sentences
+
+[18/113] Processing: supreme_cases_1980.json
+    Court: Burger Court, Year: 1980
+    ✅ Extracted: 49142 sentences
+
+[19/113] Processing: supreme_cases_1985.json
+    Court: Burger Court, Year: 1985
+    ✅ Extracted: 55808 sentences
+
+[20/113] Processing: supreme_cases_1997.json
+    Court: Rehnquist Court, Year: 1997
+    ✅ Extracted: 31732 sentences
+
+[21/113] Processing: supreme_cases_1988.json
+    Court: Rehnquist Court, Year: 1988
+    ✅ Extracted: 42929 sentences
+
+[22/113] Processing: supreme_cases_1991.json
+    Court: Rehnquist Court, Year: 1991
+    ✅ Extracted: 39585 sentences
+
+[23/113] Processing: supreme_cases_1992.json
+    Court: Rehnquist Court, Year: 1992
+    ✅ Extracted: 36679 sentences
+
+[24/113] Processing: supreme_cases_2005.json
+    Court: Rehnquist Court, Year: 2005
+    ✅ Extracted: 15315 sentences
+
+[25/113] Processing: supreme_cases_2004.json
+    Court: Rehnquist Court, Year: 2004
+    ✅ Extracted: 16267 sentences
+
+[26/113] Processing: supreme_cases_1987.json
+    Court: Rehnquist Court, Year: 1987
+    ✅ Extracted: 48114 sentences
+
+[27/113] Processing: supreme_cases_1990.json
+    Court: Rehnquist Court, Year: 1990
+    ✅ Extracted: 48744 sentences
+
+[28/113] Processing: supreme_cases_1994.json
+    Court: Rehnquist Court, Year: 1994
+    ✅ Extracted: 30892 sentences
+
+[29/113] Processing: supreme_cases_2003.json
+    Court: Rehnquist Court, Year: 2003
+    ✅ Extracted: 26114 sentences
+
+[30/113] Processing: supreme_cases_1986.json
+    Court: Rehnquist Court, Year: 1986
+    ✅ Extracted: 52110 sentences
+
+[31/113] Processing: supreme_cases_2002.json
+    Court: Rehnquist Court, Year: 2002
+    ✅ Extracted: 27400 sentences
+
+[32/113] Processing: supreme_cases_1998.json
+    Court: Rehnquist Court, Year: 1998
+    ✅ Extracted: 26479 sentences
+
+[33/113] Processing: supreme_cases_1999.json
+    Court: Rehnquist Court, Year: 1999
+    ✅ Extracted: 25957 sentences
+
+[34/113] Processing: supreme_cases_1993.json
+    Court: Rehnquist Court, Year: 1993
+    ✅ Extracted: 35251 sentences
+
+[35/113] Processing: supreme_cases_1996.json
+    Court: Rehnquist Court, Year: 1996
+    ✅ Extracted: 30640 sentences
+
+[36/113] Processing: supreme_cases_2001.json
+    Court: Rehnquist Court, Year: 2001
+    ✅ Extracted: 27116 sentences
+
+[37/113] Processing: supreme_cases_1995.json
+    Court: Rehnquist Court, Year: 1995
+    ✅ Extracted: 30988 sentences
+
+[38/113] Processing: supreme_cases_2000.json
+    Court: Rehnquist Court, Year: 2000
+    ✅ Extracted: 32561 sentences
+
+[39/113] Processing: supreme_cases_1989.json
+    Court: Rehnquist Court, Year: 1989
+    ✅ Extracted: 48691 sentences
+
+[40/113] Processing: supreme_cases_1967.json
+    Court: Warren Court, Year: 1967
+    ✅ Extracted: 28453 sentences
+
+[41/113] Processing: supreme_cases_1965.json
+    Court: Warren Court, Year: 1965
+    ✅ Extracted: 22498 sentences
+
+[42/113] Processing: supreme_cases_1961.json
+    Court: Warren Court, Year: 1961
+    ✅ Extracted: 29698 sentences
+
+[43/113] Processing: supreme_cases_1954.json
+    Court: Warren Court, Year: 1954
+    ✅ Extracted: 11068 sentences
+
+[44/113] Processing: supreme_cases_1955.json
+    Court: Warren Court, Year: 1955
+    ✅ Extracted: 10544 sentences
+
+[45/113] Processing: supreme_cases_1956.json
+    Court: Warren Court, Year: 1956
+    ✅ Extracted: 13991 sentences
+
+[46/113] Processing: supreme_cases_1964.json
+    Court: Warren Court, Year: 1964
+    ✅ Extracted: 27638 sentences
+
+[47/113] Processing: supreme_cases_1963.json
+    Court: Warren Court, Year: 1963
+    ✅ Extracted: 28518 sentences
+
+[48/113] Processing: supreme_cases_1969.json
+    Court: Warren Court, Year: 1969
+    ✅ Extracted: 30941 sentences
+
+[49/113] Processing: supreme_cases_1953.json
+    Court: Warren Court, Year: 1953
+    ✅ Extracted: 17168 sentences
+
+[50/113] Processing: supreme_cases_1957.json
+    Court: Warren Court, Year: 1957
+    ✅ Extracted: 19449 sentences
+
+[51/113] Processing: supreme_cases_1959.json
+    Court: Warren Court, Year: 1959
+    ✅ Extracted: 20297 sentences
+
+[52/113] Processing: supreme_cases_1962.json
+    Court: Warren Court, Year: 1962
+    ✅ Extracted: 20050 sentences
+
+[53/113] Processing: supreme_cases_1960.json
+    Court: Warren Court, Year: 1960
+    ✅ Extracted: 22994 sentences
+
+[54/113] Processing: supreme_cases_1966.json
+    Court: Warren Court, Year: 1966
+    ✅ Extracted: 25245 sentences
+
+[55/113] Processing: supreme_cases_1958.json
+    Court: Warren Court, Year: 1958
+    ✅ Extracted: 19834 sentences
+
+[56/113] Processing: supreme_cases_1968.json
+    Court: Warren Court, Year: 1968
+    ✅ Extracted: 29259 sentences
+
+[57/113] Processing: supreme_cases_1951.json
+    Court: Vinson Court, Year: 1951
+    ✅ Extracted: 15494 sentences
+
+[58/113] Processing: supreme_cases_1953.json
+    Court: Vinson Court, Year: 1953
+    ✅ Extracted: 17168 sentences
+
+[59/113] Processing: supreme_cases_1950.json
+    Court: Vinson Court, Year: 1950
+    ✅ Extracted: 15484 sentences
+
+[60/113] Processing: supreme_cases_1947.json
+    Court: Vinson Court, Year: 1947
+    ✅ Extracted: 27783 sentences
+
+[61/113] Processing: supreme_cases_1949.json
+    Court: Vinson Court, Year: 1949
+    ✅ Extracted: 25769 sentences
+
+[62/113] Processing: supreme_cases_1948.json
+    Court: Vinson Court, Year: 1948
+    ✅ Extracted: 25569 sentences
+
+[63/113] Processing: supreme_cases_1952.json
+    Court: Vinson Court, Year: 1952
+    ✅ Extracted: 17559 sentences
+
+[64/113] Processing: supreme_cases_1946.json
+    Court: Vinson Court, Year: 1946
+    ✅ Extracted: 26149 sentences
+
+[65/113] Processing: supreme_cases_2011.json
+    Court: Roberts Court, Year: 2011
+    ✅ Extracted: 18519 sentences
+
+[66/113] Processing: supreme_cases_2020.json
+    Court: Roberts Court, Year: 2020
+    ✅ Extracted: 15360 sentences
+
+[67/113] Processing: supreme_cases_2010.json
+    Court: Roberts Court, Year: 2010
+    ✅ Extracted: 19687 sentences
+
+[68/113] Processing: supreme_cases_2019.json
+    Court: Roberts Court, Year: 2019
+    ✅ Extracted: 15670 sentences
+
+[69/113] Processing: supreme_cases_2021.json
+    Court: Roberts Court, Year: 2021
+    ✅ Extracted: 13412 sentences
+
+[70/113] Processing: supreme_cases_2022.json
+    Court: Roberts Court, Year: 2022
+    ✅ Extracted: 15161 sentences
+
+[71/113] Processing: supreme_cases_2005.json
+    Court: Roberts Court, Year: 2005
+    ✅ Extracted: 15315 sentences
+
+[72/113] Processing: supreme_cases_2024.json
+    Court: Roberts Court, Year: 2024
+    ✅ Extracted: 15587 sentences
+
+[73/113] Processing: supreme_cases_2023.json
+    Court: Roberts Court, Year: 2023
+    ✅ Extracted: 15409 sentences
+
+[74/113] Processing: supreme_cases_2006.json
+    Court: Roberts Court, Year: 2006
+    ✅ Extracted: 13163 sentences
+
+[75/113] Processing: supreme_cases_2009.json
+    Court: Roberts Court, Year: 2009
+    ✅ Extracted: 16048 sentences
+
+[76/113] Processing: supreme_cases_2012.json
+    Court: Roberts Court, Year: 2012
+    ✅ Extracted: 16005 sentences
+
+[77/113] Processing: supreme_cases_2016.json
+    Court: Roberts Court, Year: 2016
+    ✅ Extracted: 15006 sentences
+
+[78/113] Processing: supreme_cases_2018.json
+    Court: Roberts Court, Year: 2018
+    ✅ Extracted: 16224 sentences
+
+[79/113] Processing: supreme_cases_2013.json
+    Court: Roberts Court, Year: 2013
+    ✅ Extracted: 17138 sentences
+
+[80/113] Processing: supreme_cases_2025.json
+    Court: Roberts Court, Year: 2025
+    ✅ Extracted: 16117 sentences
+
+[81/113] Processing: supreme_cases_2015.json
+    Court: Roberts Court, Year: 2015
+    ✅ Extracted: 15488 sentences
+
+[82/113] Processing: supreme_cases_2007.json
+    Court: Roberts Court, Year: 2007
+    ✅ Extracted: 15642 sentences
+
+[83/113] Processing: supreme_cases_2017.json
+    Court: Roberts Court, Year: 2017
+    ✅ Extracted: 14105 sentences
+
+[84/113] Processing: supreme_cases_2008.json
+    Court: Roberts Court, Year: 2008
+    ✅ Extracted: 16283 sentences
+
+[85/113] Processing: supreme_cases_2014.json
+    Court: Roberts Court, Year: 2014
+    ✅ Extracted: 17386 sentences
+
+[86/113] Processing: supreme_cases_1942.json
+    Court: Stone Court, Year: 1942
+    ✅ Extracted: 19357 sentences
+
+[87/113] Processing: supreme_cases_1941.json
+    Court: Stone Court, Year: 1941
+    ✅ Extracted: 18045 sentences
+
+[88/113] Processing: supreme_cases_1943.json
+    Court: Stone Court, Year: 1943
+    ✅ Extracted: 23659 sentences
+
+[89/113] Processing: supreme_cases_1945.json
+    Court: Stone Court, Year: 1945
+    ✅ Extracted: 27985 sentences
+
+[90/113] Processing: supreme_cases_1944.json
+    Court: Stone Court, Year: 1944
+    ✅ Extracted: 22216 sentences
+
+[91/113] Processing: supreme_cases_1946.json
+    Court: Stone Court, Year: 1946
+    ✅ Extracted: 26149 sentences
+
+[92/113] Processing: supreme_cases_1938.json
+    Court: Hughes Court, Year: 1938
+    ✅ Extracted: 18653 sentences
+
+[93/113] Processing: supreme_cases_1935.json
+    Court: Hughes Court, Year: 1935
+    ✅ Extracted: 21467 sentences
+
+[94/113] Processing: supreme_cases_1934.json
+    Court: Hughes Court, Year: 1934
+    ✅ Extracted: 19101 sentences
+
+[95/113] Processing: supreme_cases_1933.json
+    Court: Hughes Court, Year: 1933
+    ✅ Extracted: 19218 sentences
+
+[96/113] Processing: supreme_cases_1930.json
+    Court: Hughes Court, Year: 1930
+    ✅ Extracted: 11160 sentences
+
+[97/113] Processing: supreme_cases_1941.json
+    Court: Hughes Court, Year: 1941
+    ✅ Extracted: 18045 sentences
+
+[98/113] Processing: supreme_cases_1936.json
+    Court: Hughes Court, Year: 1936
+    ✅ Extracted: 16854 sentences
+
+[99/113] Processing: supreme_cases_1939.json
+    Court: Hughes Court, Year: 1939
+    ✅ Extracted: 18429 sentences
+
+[100/113] Processing: supreme_cases_1931.json
+    Court: Hughes Court, Year: 1931
+    ✅ Extracted: 16295 sentences
+
+[101/113] Processing: supreme_cases_1937.json
+    Court: Hughes Court, Year: 1937
+    ✅ Extracted: 19222 sentences
+
+[102/113] Processing: supreme_cases_1940.json
+    Court: Hughes Court, Year: 1940
+    ✅ Extracted: 17145 sentences
+
+[103/113] Processing: supreme_cases_1932.json
+    Court: Hughes Court, Year: 1932
+    ✅ Extracted: 17533 sentences
+
+[104/113] Processing: supreme_cases_1924.json
+    Court: Taft Court, Year: 1924
+    ✅ Extracted: 15999 sentences
+
+[105/113] Processing: supreme_cases_1930.json
+    Court: Taft Court, Year: 1930
+    ✅ Extracted: 11160 sentences
+
+[106/113] Processing: supreme_cases_1928.json
+    Court: Taft Court, Year: 1928
+    ✅ Extracted: 14274 sentences
+
+[107/113] Processing: supreme_cases_1925.json
+    Court: Taft Court, Year: 1925
+    ✅ Extracted: 15439 sentences
+
+[108/113] Processing: supreme_cases_1922.json
+    Court: Taft Court, Year: 1922
+    ✅ Extracted: 15919 sentences
+
+[109/113] Processing: supreme_cases_1921.json
+    Court: Taft Court, Year: 1921
+    ✅ Extracted: 15173 sentences
+
+[110/113] Processing: supreme_cases_1929.json
+    Court: Taft Court, Year: 1929
+    ✅ Extracted: 12686 sentences
+
+[111/113] Processing: supreme_cases_1926.json
+    Court: Taft Court, Year: 1926
+    ✅ Extracted: 19469 sentences
+
+[112/113] Processing: supreme_cases_1927.json
+    Court: Taft Court, Year: 1927
+    ✅ Extracted: 16706 sentences
+
+[113/113] Processing: supreme_cases_1923.json
+    Court: Taft Court, Year: 1923
+    ✅ Extracted: 18241 sentences
+
+======================================================================
+📊 CREATING OUTPUT FILES
+======================================================================
+
+📊 Total sentences: 9,993,896
+📊 Total cases: 32,103
+
+📋 Sentences by Court:
+   Unknown: 7,123,979
+   Burger Court: 809,409
+   Rehnquist Court: 673,564
+   Warren Court: 377,645
+   Roberts Court: 332,725
+   Hughes Court: 213,122
+   Vinson Court: 170,975
+   Taft Court: 155,066
+   Stone Court: 137,411
+
+📋 Sentences by Source Field:
+source_field
+opinion            7022441
+syllabus           2894197
+annotation           50736
+summary              24812
+primary_holding       1710
+
+💾 Saved: ./scotus_extracted/scotus_all_sentences.csv
+Traceback (most recent call last):
+  File "/home/lavanya/LAMUS/lamus_complete_solution/C_extract_scotus_data.py", line 177, in <module>
+    main()
+  File "/home/lavanya/LAMUS/lamus_complete_solution/C_extract_scotus_data.py", line 157, in main
+    df.to_excel(xlsx_path, index=False)
+  File "/home/lavanya/.local/lib/python3.10/site-packages/pandas/util/_decorators.py", line 333, in wrapper
+    return func(*args, **kwargs)
+  File "/home/lavanya/.local/lib/python3.10/site-packages/pandas/core/generic.py", line 2436, in to_excel
+    formatter.write(
+  File "/home/lavanya/.local/lib/python3.10/site-packages/pandas/io/formats/excel.py", line 931, in write
+    raise ValueError(
+ValueError: This sheet is too large! Your sheet size is: 9993896, 8 Max sheet size is: 1048576, 16384

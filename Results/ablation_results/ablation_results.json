@@ -1,0 +1,110 @@
+{
+  "lr_1e-5": {
+    "config": {
+      "name": "lr_1e-5",
+      "lr": 1e-05,
+      "epochs": 3,
+      "lora_rank": 16
+    },
+    "accuracy": 0.7511591962905718,
+    "training_time_seconds": 4968.94315,
+    "trainable_params": 6815744,
+    "timestamp": "2026-01-10T19:15:51.600275"
+  },
+  "lr_5e-5": {
+    "config": {
+      "name": "lr_5e-5",
+      "lr": 5e-05,
+      "epochs": 3,
+      "lora_rank": 16
+    },
+    "accuracy": 0.8315301391035549,
+    "training_time_seconds": 5052.953773,
+    "trainable_params": 6815744,
+    "timestamp": "2026-01-10T20:44:50.749520"
+  },
+  "lr_1e-4": {
+    "config": {
+      "name": "lr_1e-4",
+      "lr": 0.0001,
+      "epochs": 3,
+      "lora_rank": 16
+    },
+    "accuracy": 0.8454404945904173,
+    "training_time_seconds": 5061.348881,
+    "trainable_params": 6815744,
+    "timestamp": "2026-01-10T22:13:57.391313"
+  },
+  "lr_2e-4": {
+    "config": {
+      "name": "lr_2e-4",
+      "lr": 0.0002,
+      "epochs": 3,
+      "lora_rank": 16
+    },
+    "accuracy": 0.8516228748068007,
+    "training_time_seconds": 5062.074541,
+    "trainable_params": 6815744,
+    "timestamp": "2026-01-10T23:43:01.219552"
+  },
+  "epoch_1": {
+    "config": {
+      "name": "epoch_1",
+      "lr": 0.0002,
+      "epochs": 1,
+      "lora_rank": 16
+    },
+    "accuracy": 0.8268933539412674,
+    "training_time_seconds": 1680.114331,
+    "trainable_params": 6815744,
+    "timestamp": "2026-01-11T00:15:44.266443"
+  },
+  "epoch_2": {
+    "config": {
+      "name": "epoch_2",
+      "lr": 0.0002,
+      "epochs": 2,
+      "lora_rank": 16
+    },
+    "accuracy": 0.8408037094281299,
+    "training_time_seconds": 3372.605968,
+    "trainable_params": 6815744,
+    "timestamp": "2026-01-11T01:16:39.075741"
+  },
+  "epoch_5": {
+    "config": {
+      "name": "epoch_5",
+      "lr": 0.0002,
+      "epochs": 5,
+      "lora_rank": 16
+    },
+    "accuracy": 0.839258114374034,
+    "training_time_seconds": 8457.910954,
+    "trainable_params": 6815744,
+    "timestamp": "2026-01-11T03:42:14.444773"
+  },
+  "lora_8": {
+    "config": {
+      "name": "lora_8",
+      "lr": 0.0002,
+      "epochs": 3,
+      "lora_rank": 8
+    },
+    "accuracy": 0.8469860896445132,
+    "training_time_seconds": 5067.338323,
+    "trainable_params": 3407872,
+    "timestamp": "2026-01-11T05:11:23.916298"
+  },
+  "lora_32": {
+    "config": {
+      "name": "lora_32",
+      "lr": 0.0002,
+      "epochs": 3,
+      "lora_rank": 32
+    },
+    "accuracy": 0.8438948995363215,
+    "training_time_seconds": 5050.851919,
+    "trainable_params": 13631488,
+    "timestamp": "2026-01-11T06:40:19.296905"
+  }
+}
