@@ -1,0 +1,7 @@
+Label,Correct,Total,Errors,Error_Rate
+Analysis,0,92,92,100.0
+Conclusion,1,58,57,98.28
+Facts,356,401,45,11.22
+Issue,1,27,26,96.3
+Others,2,35,33,94.29
+Rule/Law/Holding,3,34,31,91.18
