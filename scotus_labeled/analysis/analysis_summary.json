@@ -1,0 +1,54 @@
+{
+  "dataset": "Roberts Court SCOTUS (2005-Present)",
+  "model": "Fine-tuned Llama-3-8B (85.16% accuracy)",
+  "analysis_date": "2026-01-13T09:41:45.256446",
+  "statistics": {
+    "total_sentences": 362891,
+    "unique_cases": 1522,
+    "unique_sources": 21,
+    "year_min": 2005,
+    "year_max": 2025,
+    "avg_sentence_length": 145.30116481257457,
+    "median_sentence_length": 128.0,
+    "min_sentence_length": "20",
+    "max_sentence_length": "1976"
+  },
+  "label_distribution": {
+    "Facts": {
+      "count": 88294,
+      "percentage": 24.33
+    },
+    "Issue": {
+      "count": 8369,
+      "percentage": 2.31
+    },
+    "Rule/Law/Holding": {
+      "count": 101010,
+      "percentage": 27.83
+    },
+    "Analysis": {
+      "count": 96918,
+      "percentage": 26.71
+    },
+    "Conclusion": {
+      "count": 12684,
+      "percentage": 3.5
+    },
+    "Others": {
+      "count": 55616,
+      "percentage": 15.33
+    }
+  },
+  "generated_files": [
+    "label_distribution.png",
+    "label_distribution_pie.png",
+    "temporal_distribution.png",
+    "temporal_counts.png",
+    "sentences_per_year.png",
+    "training_vs_scotus.png",
+    "sentence_length_boxplot.png",
+    "sample_sentences.json",
+    "roberts_table.tex",
+    "roberts_table.md"
+  ]
+}

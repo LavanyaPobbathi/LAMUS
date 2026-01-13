@@ -1,0 +1,9 @@
+| Category | Count | Percentage |
+|----------|------:|----------:|
+| Facts | 88,294 | 24.3% |
+| Issue | 8,369 | 2.3% |
+| Rule/Law/Holding | 101,010 | 27.8% |
+| Analysis | 96,918 | 26.7% |
+| Conclusion | 12,684 | 3.5% |
+| Others | 55,616 | 15.3% |
+| **Total** | **362,891** | **100.0%** |

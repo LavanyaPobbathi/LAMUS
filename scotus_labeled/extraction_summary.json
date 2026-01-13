@@ -1,0 +1,40 @@
+{
+  "task": "Roberts Court Sentence Extraction",
+  "input_dir": "./scotus_data",
+  "json_files_processed": 113,
+  "total_cases": 49847,
+  "roberts_court_cases": 3128,
+  "skipped_no_year": 4,
+  "skipped_before_2005": 46715,
+  "total_sentences": 1306375,
+  "unique_sentences": 692083,
+  "year_distribution": {
+    "2005": 33191,
+    "2006": 26173,
+    "2007": 31070,
+    "2008": 32705,
+    "2009": 31799,
+    "2010": 42198,
+    "2011": 36373,
+    "2012": 30764,
+    "2013": 31829,
+    "2014": 28176,
+    "2015": 33643,
+    "2016": 28496,
+    "2017": 24070,
+    "2018": 34112,
+    "2019": 34559,
+    "2020": 37240,
+    "2021": 29286,
+    "2022": 33427,
+    "2023": 37367,
+    "2024": 38008,
+    "2025": 37597
+  },
+  "source_distribution": {
+    "opinion": 615855,
+    "syllabus": 76228
+  },
+  "output_file": "./scotus_labeled/roberts_court_sentences.csv",
+  "timestamp": "2026-01-12T14:25:55.287584"
+}
