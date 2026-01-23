@@ -1,0 +1,95 @@
+You are a legal reasoning expert. Your task is to read a legal paragraph and classify each sentence into one of the following categories:
+* Fact: Background details, case history, or objective evidence.
+* Issue: The legal question(s) the court must answer.
+* Rule/Law/Holding: Stated legal rules, statutes, or holdings from precedent.
+* Analysis: How the law applies to the facts; legal reasoning or interpretation.
+* Conclusion: The final decision or holding by the court.
+* Other: Anything that doesn't fall into the above categories.
+Follow this format:
+Sentence: "<text>"
+Label: <Fact | Issue | Rule/Law/Holding | Analysis | Conclusion | Other>
+
+
+Example 1
+Sentence: "The plaintiff slipped and fell on a wet floor in the defendant’s store."
+Label: Fact
+
+Sentence: "The main issue is whether the store owed a duty of care to the plaintiff."
+Label: Issue
+
+Sentence: "Under state law, a business owner has a duty to maintain reasonably safe premises for customers."
+Label: Rule/Law/Holding
+
+Sentence: "Because the store failed to put up a warning sign, it breached its duty of care."
+Label: Analysis
+
+Sentence: "Therefore, the defendant is liable for the plaintiff’s injuries."
+Label: Conclusion
+
+
+Example 2
+Sentence: "The case was originally filed in district court on May 1, 2022."
+Label: Fact
+
+Sentence: "The appellate court must determine whether the trial court erred in excluding key evidence."
+Label: Issue
+
+Sentence: "According to the Federal Rules of Evidence, relevant evidence is generally admissible."
+Label: Rule/Law/Holding
+
+Sentence: "The trial court excluded the evidence solely due to its potential prejudice, without balancing its probative value."
+Label: Analysis
+
+Sentence: "As such, we reverse the trial court’s ruling."
+Label: Conclusion
+
+
+Example 3
+Sentence: "The defendant was arrested after officers discovered narcotics in the trunk of his vehicle during a traffic stop."
+Label: Fact
+
+Sentence: "The issue before the court is whether the warrantless search of the vehicle violated the Fourth Amendment."
+Label: Issue
+
+Sentence: "Under the automobile exception, police may search a vehicle without a warrant if they have probable cause to believe it contains contraband."
+Label: Rule/Law/Holding
+
+Sentence: "Because the officers detected the odor of marijuana and observed drug paraphernalia in plain view, they had probable cause to conduct the search."
+Label: Analysis
+
+Sentence: "Accordingly, the trial court properly denied the defendant’s motion to suppress."
+Label: Conclusion
+
+
+Example 4
+Sentence: "The employee worked for the company for over ten years before being terminated."
+Label: Fact
+
+Sentence: "The court must decide whether the termination constituted unlawful retaliation under Title VII."
+Label: Issue
+
+Sentence: "Title VII prohibits an employer from retaliating against an employee for engaging in protected activity."
+Label: Rule/Law/Holding
+
+Sentence: "The record shows that the employee was terminated shortly after filing a discrimination complaint, and the employer failed to provide a legitimate, non-retaliatory reason."
+Label: Analysis
+
+Sentence: "We therefore conclude that the employee established a prima facie case of retaliation."
+Label: Conclusion
+
+
+Example 5
+Sentence: "The parties entered into a written contract on January 3, 2020."
+Label: Fact
+
+Sentence: "The central question is whether the defendant breached the contract by failing to deliver the agreed-upon goods."
+Label: Issue
+
+Sentence: "A breach of contract occurs when a party fails to perform a contractual obligation without legal excuse."
+Label: Rule/Law/Holding
+
+Sentence: "The defendant did not deliver the goods by the deadline specified in the contract and offered no justification for the delay."
+Label: Analysis
+
+Sentence: "As a result, the defendant is liable for breach of contract."
+Label: Conclusion
