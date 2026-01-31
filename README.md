@@ -412,8 +412,6 @@ python code/experiments/F_run_ablation_grid.py
 
 ## 📄 License
 
-This project is released under the MIT License. See [LICENSE](LICENSE) for details.
-
 The underlying Supreme Court opinions are in the **public domain** as U.S. government works.
 
 ---
@@ -431,16 +429,7 @@ The underlying Supreme Court opinions are in the **public domain** as U.S. gover
 ## 📧 Contact
 
 For questions or collaboration:
-- **Lavanya Pobbathi** - University of North Texas
-- **Professor Serene Wang** - University of North Texas
 - **Professor Haihua Chen** - University of North Texas
+- **Lavanya Pobbathi** - University of North Texas
+- **Serene Wang** - University of North Texas
 
----
-
-<div align="center">
-
-**⭐ Star this repo if you find it useful! ⭐**
-
-Made with ❤️ at University of North Texas
-
-</div>
