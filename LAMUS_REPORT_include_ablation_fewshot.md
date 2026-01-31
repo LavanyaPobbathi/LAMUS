@@ -1,7 +1,7 @@
 # LAMUS Project - Final Report
 ## Legal Argument Mining from U.S. Supreme Court Using Large Language Models
 
-**Authors:** Lavanya Pobbathi, Professor Serene Wang, Professor Haihua Chen  
+**Authors:** Professor Haihua Chen, Serene Wang, Lavanya Pobbathi
 **Institution:** University of North Texas  
 **Date:** January 31, 2026  
 **Dataset:** https://huggingface.co/datasets/LavanyaPobbathi/lamus-scotus-legal-arguments
