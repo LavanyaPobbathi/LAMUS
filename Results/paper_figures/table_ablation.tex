@@ -1,0 +1,22 @@
+\begin{table}[t]
+\centering
+\caption{Ablation Study Results for Llama-3-8B Fine-tuning. Best configuration in \textbf{bold}.}
+\label{tab:ablation}
+\small
+\begin{tabular}{cccc}
+\toprule
+\textbf{Learning Rate} & \textbf{LoRA Rank} & \textbf{Epochs} & \textbf{Accuracy} \\
+\midrule
+2e-4 & 16 & 3 & \textbf{85.16\%} \\
+2e-4 & 8 & 3 & 84.70\% \\
+1e-4 & 16 & 3 & 84.54\% \\
+2e-4 & 32 & 3 & 84.39\% \\
+2e-4 & 16 & 5 & 83.93\% \\
+5e-5 & 16 & 3 & 83.15\% \\
+2e-4 & 16 & 1 & 82.69\% \\
+1e-5 & 16 & 3 & 75.12\% \\
+1e-5 & 8 & 3 & 70.02\% \\
+1e-5 & 8 & 1 & 55.95\% \\
+\bottomrule
+\end{tabular}
+\end{table}

@@ -1,0 +1,16 @@
+\begin{table}[t]
+\centering
+\caption{Few-Shot Example Count Analysis. Zero-Shot baseline shown for comparison.}
+\label{tab:fewshot}
+\small
+\begin{tabular}{l|c|cccc}
+\toprule
+\textbf{Model} & \textbf{Zero-Shot} & \textbf{1-ex} & \textbf{3-ex} & \textbf{4-ex} & \textbf{5-ex} \\
+\midrule
+Llama-3-8B & 65.38\% & 47.76\% & 49.61\% & \textbf{52.86\%} & 50.54\% \\
+SaulLM-54B & 67.39\% & 54.40\% & 66.31\% & 59.51\% & \textbf{67.70\%} \\
+\midrule
+\multicolumn{6}{l}{\textit{Key Finding: Few-shot prompting decreases accuracy compared to zero-shot.}} \\
+\bottomrule
+\end{tabular}
+\end{table}

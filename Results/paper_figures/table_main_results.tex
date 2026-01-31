@@ -1,0 +1,26 @@
+\begin{table}[t]
+\centering
+\caption{Legal Argument Classification Results. Best result in \textbf{bold}. Baseline accuracy is 61.98\% (majority class).}
+\label{tab:main_results}
+\small
+\begin{tabular}{llcc}
+\toprule
+\textbf{Model} & \textbf{Method} & \textbf{Accuracy} & \textbf{vs Baseline} \\
+\midrule
+\multicolumn{4}{l}{\textit{Fine-tuning}} \\
+Llama-3-8B & Fine-tuned (Ablation Best) & \textbf{85.16\%} & +23.18\% \\
+LegalBERT & Fine-tuned & 81.30\% & +19.32\% \\
+Llama-3-8B & Fine-tuned (Original) & 80.37\% & +18.39\% \\
+\midrule
+\multicolumn{4}{l}{\textit{Prompting}} \\
+Llama-3-8B & Chain-of-Thought & 75.89\% & +13.91\% \\
+SaulLM-54B & Chain-of-Thought & 72.80\% & +10.82\% \\
+SaulLM-54B & Zero-Shot & 67.39\% & +5.41\% \\
+Llama-3-8B & Zero-Shot & 65.38\% & +3.40\% \\
+SaulLM-54B & Few-Shot & 64.76\% & +2.78\% \\
+law-LLM & Zero-Shot & 60.12\% & -1.86\% \\
+Qwen3-Thinking & Zero-Shot & 56.11\% & -5.87\% \\
+SaulLM-7B & Zero-Shot & 52.09\% & -9.89\% \\
+\bottomrule
+\end{tabular}
+\end{table}
