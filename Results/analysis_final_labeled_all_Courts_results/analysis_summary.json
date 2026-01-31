@@ -1,0 +1,29 @@
+{
+  "dataset": "All Supreme Court Eras (1921-Present)",
+  "model": "Fine-tuned Llama-3-8B (85.16% accuracy)",
+  "total_sentences": 2900083,
+  "courts": [
+    "Burger Court",
+    "Rehnquist Court",
+    "Warren Court",
+    "Vinson Court",
+    "Stone Court",
+    "Hughes Court",
+    "Taft Court",
+    "Roberts Court"
+  ],
+  "analysis_date": "2026-01-23T17:37:18.898663",
+  "statistics": {
+    "total_sentences": 2900083,
+    "total_courts": 8,
+    "unique_cases": 16538
+  },
+  "label_distribution": {
+    "Analysis": 799921,
+    "Rule/Law/Holding": 799324,
+    "Facts": 763106,
+    "Others": 354784,
+    "Conclusion": 123137,
+    "Issue": 59811
+  }
+}
