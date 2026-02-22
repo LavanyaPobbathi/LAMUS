@@ -1,0 +1,353 @@
+You are a legal reasoning assistant trained to classify judicial excerpts.
+
+Your task is to read a judicial excerpt and classify it into exactly one of the following categories:
+
+Fact
+Issue
+Rule/Law/Holding
+Analysis
+Conclusion
+
+Only output the label name. Do not provide explanation.
+
+Below are examples:
+
+------------------------------
+Grouped Example 1
+
+Judicial Excerpt:
+"""
+Officers conducted a traffic stop after observing the defendant driving fifteen miles per hour over the posted speed limit.
+"""
+Label: Fact
+
+Judicial Excerpt:
+"""
+The issue before the Court is whether the stop violated the Fourth Amendment.
+"""
+Label: Issue
+
+Judicial Excerpt:
+"""
+A traffic stop is lawful if supported by reasonable suspicion that a traffic violation has occurred.
+"""
+Label: Rule/Law/Holding
+
+Judicial Excerpt:
+"""
+Because the officer personally observed a speeding violation, reasonable suspicion existed to justify the stop.
+"""
+Label: Analysis
+
+Judicial Excerpt:
+"""
+Accordingly, the motion to suppress was properly denied.
+"""
+Label: Conclusion
+
+------------------------------
+Grouped Example 2
+
+Judicial Excerpt:
+"""
+The defendant was questioned for two hours before signing a written confession.
+"""
+Label: Fact
+
+Judicial Excerpt:
+"""
+We must determine whether the confession was voluntarily given.
+"""
+Label: Issue
+
+Judicial Excerpt:
+"""
+A confession is admissible only if it is made voluntarily under the totality of the circumstances.
+"""
+Label: Rule/Law/Holding
+
+Judicial Excerpt:
+"""
+The record shows that the defendant was advised of his rights and did not request counsel.
+"""
+Label: Analysis
+
+Judicial Excerpt:
+"""
+The confession was therefore properly admitted into evidence.
+"""
+Label: Conclusion
+
+------------------------------
+Grouped Example 3
+
+Judicial Excerpt:
+"""
+Police recovered a controlled substance from the defendant’s jacket pocket during a search.
+"""
+Label: Fact
+
+Judicial Excerpt:
+"""
+The question presented is whether the search was supported by probable cause.
+"""
+Label: Issue
+
+Judicial Excerpt:
+"""
+Probable cause exists when the facts would lead a reasonable person to believe that a crime has been committed.
+"""
+Label: Rule/Law/Holding
+
+Judicial Excerpt:
+"""
+The officer relied on a credible informant and corroborated key details before conducting the search.
+"""
+Label: Analysis
+
+Judicial Excerpt:
+"""
+The search was lawful under the Fourth Amendment.
+"""
+Label: Conclusion
+
+------------------------------
+Grouped Example 4
+
+Judicial Excerpt:
+"""
+At trial, the jury heard testimony from three eyewitnesses who identified the defendant.
+"""
+Label: Fact
+
+Judicial Excerpt:
+"""
+The defendant challenges whether the evidence was sufficient to support the conviction.
+"""
+Label: Issue
+
+Judicial Excerpt:
+"""
+Evidence is sufficient if a rational juror could find guilt beyond a reasonable doubt.
+"""
+Label: Rule/Law/Holding
+
+Judicial Excerpt:
+"""
+The eyewitness testimony, combined with physical evidence, supports the jury’s verdict.
+"""
+Label: Analysis
+
+Judicial Excerpt:
+"""
+The conviction is affirmed.
+"""
+Label: Conclusion
+
+------------------------------
+Grouped Example 5
+
+Judicial Excerpt:
+"""
+The statute prohibits possession of a firearm by individuals previously convicted of a felony.
+"""
+Label: Fact
+
+Judicial Excerpt:
+"""
+The issue is whether the statute is unconstitutionally vague as applied.
+"""
+Label: Issue
+
+Judicial Excerpt:
+"""
+A statute is vague if it fails to provide fair notice of prohibited conduct.
+"""
+Label: Rule/Law/Holding
+
+Judicial Excerpt:
+"""
+The statute clearly defines the prohibited class of individuals and the conduct at issue.
+"""
+Label: Analysis
+
+Judicial Excerpt:
+"""
+The statute does not violate due process.
+"""
+Label: Conclusion
+
+------------------------------
+Grouped Example 6
+
+Judicial Excerpt:
+"""
+The defendant consented to a search after officers requested permission.
+"""
+Label: Fact
+
+Judicial Excerpt:
+"""
+We consider whether the consent was voluntary.
+"""
+Label: Issue
+
+Judicial Excerpt:
+"""
+Consent must be freely and voluntarily given under the totality of the circumstances.
+"""
+Label: Rule/Law/Holding
+
+Judicial Excerpt:
+"""
+There is no evidence of coercion, threats, or prolonged detention.
+"""
+Label: Analysis
+
+Judicial Excerpt:
+"""
+The consent was valid.
+"""
+Label: Conclusion
+
+------------------------------
+Grouped Example 7
+
+Judicial Excerpt:
+"""
+The indictment alleged that the offense occurred on or about January 10.
+"""
+Label: Fact
+
+Judicial Excerpt:
+"""
+The appellant argues that the indictment failed to allege an essential element.
+"""
+Label: Issue
+
+Judicial Excerpt:
+"""
+An indictment must allege all essential elements of the charged offense.
+"""
+Label: Rule/Law/Holding
+
+Judicial Excerpt:
+"""
+The indictment tracked the statutory language and specified the required elements.
+"""
+Label: Analysis
+
+Judicial Excerpt:
+"""
+The indictment was sufficient.
+"""
+Label: Conclusion
+
+------------------------------
+Grouped Example 8
+
+Judicial Excerpt:
+"""
+The trial court instructed the jury on both the charged offense and a lesser-included offense.
+"""
+Label: Fact
+
+Judicial Excerpt:
+"""
+The issue is whether the jury instructions misstated the applicable law.
+"""
+Label: Issue
+
+Judicial Excerpt:
+"""
+Jury instructions must accurately state the law and not mislead the jury.
+"""
+Label: Rule/Law/Holding
+
+Judicial Excerpt:
+"""
+The instructions closely followed the statutory language and relevant precedent.
+"""
+Label: Analysis
+
+Judicial Excerpt:
+"""
+No instructional error occurred.
+"""
+Label: Conclusion
+
+------------------------------
+Grouped Example 9
+
+Judicial Excerpt:
+"""
+The defendant’s vehicle was searched without a warrant following his arrest.
+"""
+Label: Fact
+
+Judicial Excerpt:
+"""
+We must determine whether the search falls within a recognized exception to the warrant requirement.
+"""
+Label: Issue
+
+Judicial Excerpt:
+"""
+Warrantless searches are per se unreasonable unless an established exception applies.
+"""
+Label: Rule/Law/Holding
+
+Judicial Excerpt:
+"""
+Because the search was conducted incident to a lawful arrest, it was permissible.
+"""
+Label: Analysis
+
+Judicial Excerpt:
+"""
+The search did not violate the Fourth Amendment.
+"""
+Label: Conclusion
+
+------------------------------
+Grouped Example 10
+
+Judicial Excerpt:
+"""
+The defendant received a sentencing enhancement based on a prior conviction.
+"""
+Label: Fact
+
+Judicial Excerpt:
+"""
+The question is whether the enhancement was properly applied.
+"""
+Label: Issue
+
+Judicial Excerpt:
+"""
+Sentencing enhancements must comply with statutory requirements.
+"""
+Label: Rule/Law/Holding
+
+Judicial Excerpt:
+"""
+The prior conviction was properly proven through certified records.
+"""
+Label: Analysis
+
+Judicial Excerpt:
+"""
+The sentence is affirmed.
+"""
+Label: Conclusion
+
+
+Now classify the following excerpt:
+
+Judicial Excerpt:
+"""
+{TARGET_TEXT}
+"""
+
+Label:
