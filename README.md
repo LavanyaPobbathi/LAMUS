@@ -2,9 +2,10 @@
 
 <div align="center">
 
-[![Paper](https://img.shields.io/badge/Paper-January%202026-blue)]()
-[![Best Accuracy](https://img.shields.io/badge/Best%20Accuracy-85.16%25-brightgreen)]()
+[![Paper](https://img.shields.io/badge/Paper-March%202026-blue)]()
+[![Best Accuracy](https://img.shields.io/badge/Best%20Accuracy-85.32%25-brightgreen)]()
 [![SCOTUS Dataset](https://img.shields.io/badge/SCOTUS%20Sentences-2.9M-orange)]()
+[![Cohen's Kappa](https://img.shields.io/badge/Cohen's%20Kappa-0.85-purple)]()
 [![Hugging Face](https://img.shields.io/badge/🤗%20Hugging%20Face-Dataset-yellow)](https://huggingface.co/datasets/LavanyaPobbathi/lamus-scotus-legal-arguments)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
@@ -20,20 +21,21 @@
 
 ## 📋 Project Overview
 
-This research project evaluates Large Language Models (LLMs) for legal argument classification, specifically classifying legal sentences into rhetorical role categories. The project achieves **85.16% accuracy** using fine-tuned Llama-3-8B and creates the **largest publicly available labeled dataset** with **2,900,083 sentences** from all 8 U.S. Supreme Court eras (1921-2025).
+This research project evaluates Large Language Models (LLMs) for legal argument classification, specifically classifying legal sentences into rhetorical role categories. The project achieves **85.32% accuracy** using fine-tuned Llama-3-8B and creates the **largest publicly available labeled dataset** with **2,900,083 sentences** from all 8 U.S. Supreme Court eras (1921-2025).
 
 | Metric | Value |
 |--------|-------|
-| **Best Accuracy** | 85.16% (Fine-tuned Llama-3-8B) |
+| **Best Accuracy** | 85.32% (Fine-tuned Llama-3-8B) |
 | **Target Accuracy** | 80-85% ✅ EXCEEDED |
-| **Total Experiments** | 30 (18 prompting + 3 fine-tuning + 9 ablation) |
+| **Total Experiments** | 57 (21 prompting + 36 ablation) |
 | **SCOTUS Sentences Labeled** | 2,900,083 |
 | **Supreme Court Eras** | 8 (1921-2025) |
+| **Human Verification** | Cohen's Kappa κ = 0.85 (Almost Perfect) |
 | **Public Datasets** | 2 (Full SCOTUS + Roberts Court) |
 
 **Institution:** University of North Texas  
-**Authors:** Lavanya Pobbathi, Professor Serene Wang, Professor Haihua Chen  
-**Date:** January 2026
+**Authors:** Serene Wang, Lavanya Pobbathi, Haihua Chen  
+**Date:** March 2026
 
 ---
 
@@ -43,20 +45,20 @@ This research project evaluates Large Language Models (LLMs) for legal argument 
 
 | Rank | Model | Method | Accuracy | vs Baseline |
 |------|-------|--------|----------|-------------|
-| 1 | **Llama-3-8B** | Fine-tuned (Ablation Best) | **85.16%** ⭐ | +23.18% |
-| 2 | LegalBERT | Fine-tuned | 81.30% | +19.32% |
-| 3 | Llama-3-8B | Fine-tuned (Original) | 80.37% | +18.39% |
-| 4 | Llama-3-8B | Chain-of-Thought | 75.89% | +13.91% |
-| 5 | SaulLM-54B | Chain-of-Thought | 72.80% | +10.82% |
-| 6 | SaulLM-54B | Zero-Shot | 67.39% | +5.41% |
-| 7 | Llama-3-8B | Zero-Shot | 65.38% | +3.40% |
-| 8 | SaulLM-54B | Few-Shot | 64.76% | +2.78% |
-| 9 | law-LLM | Zero-Shot | 60.12% | -1.86% |
-| 10 | Qwen3-Thinking | Zero-Shot | 56.11% | -5.87% |
+| 1 | **Llama-3-8B** | Fine-tuned (Ablation Best) | **85.32%** ⭐ | +23.34% |
+| 2 | Llama-3-8B | Fine-tuned (2e-4, Ep3) | 85.16% | +23.18% |
+| 3 | LegalBERT | Fine-tuned | 81.30% | +19.32% |
+| 4 | Llama-3-8B | Fine-tuned (Original) | 80.37% | +18.39% |
+| 5 | Llama-3-8B | Chain-of-Thought | 75.89% | +13.91% |
+| 6 | SaulLM-54B | Chain-of-Thought | 72.80% | +10.82% |
+| 7 | SaulLM-54B | Zero-Shot | 67.39% | +5.41% |
+| 8 | Llama-3-8B | Zero-Shot | 65.38% | +3.40% |
+| 9 | SaulLM-54B | Few-Shot | 64.76% | +2.78% |
+| 10 | law-LLM | Zero-Shot | 60.12% | -1.86% |
 
 **Baseline (Majority Class):** 61.98%
 
-### Prompting Results (18 Experiments)
+### Prompting Results (21 Experiments)
 
 | Model | Domain | Params | Zero-Shot | Few-Shot | Chain-of-Thought |
 |-------|--------|--------|-----------|----------|------------------|
@@ -71,52 +73,123 @@ This research project evaluates Large Language Models (LLMs) for legal argument 
 
 ---
 
-## 📊 Ablation Study (10 Experiments)
+## 📊 Complete Ablation Study (36 Experiments)
 
-Systematic hyperparameter analysis for Llama-3-8B fine-tuning:
+Systematic hyperparameter grid search across all combinations:
 
-| Learning Rate | LoRA Rank | Epochs | Accuracy |
-|---------------|-----------|--------|----------|
-| **2e-4** | **16** | **3** | **85.16%** ⭐ |
-| 2e-4 | 8 | 3 | 84.70% |
-| 1e-4 | 16 | 3 | 84.54% |
-| 2e-4 | 32 | 3 | 84.39% |
-| 2e-4 | 16 | 5 | 83.93% |
-| 5e-5 | 16 | 3 | 83.15% |
-| 2e-4 | 16 | 1 | 82.69% |
-| 1e-5 | 16 | 3 | 75.12% |
-| 1e-5 | 8 | 3 | 70.02% |
-| 1e-5 | 8 | 1 | 55.95% |
+### Full Ablation Grid Results
 
-### Hyperparameter Sensitivity
+|  | **Epochs = 1** ||| **Epochs = 3** ||| **Epochs = 5** |||
+|---|---|---|---|---|---|---|---|---|---|
+| **LR** | R=8 | R=16 | R=32 | R=8 | R=16 | R=32 | R=8 | R=16 | R=32 |
+| 1e-5 | 55.95 | 66.62 | 69.24 | 70.02 | 75.12 | 79.60 | 76.82 | 79.75 | 81.76 |
+| 5e-5 | 74.96 | 78.83 | 81.30 | 82.23 | 83.15 | 83.93 | 84.23 | 84.70 | 85.01 |
+| 1e-4 | 79.44 | 80.68 | 81.76 | 83.77 | 84.54 | 84.23 | **85.32** | **85.32** | 85.01 |
+| 2e-4 | 81.30 | 82.69 | 83.62 | 84.70 | 85.16 | 84.39 | 84.85 | 83.93 | 83.31 |
 
-| Parameter | Sensitivity | Range | Optimal |
-|-----------|-------------|-------|---------|
-| **Learning Rate** | 🔴 HIGH | 55.95% → 85.16% (29% swing) | 2e-4 |
-| **Epochs** | 🟡 MODERATE | 82.69% → 85.16% (2.5% swing) | 3 |
-| **LoRA Rank** | 🟢 LOW | 84.39% → 85.16% (<1% swing) | 16 |
+### Top 10 Configurations
 
-**Key Finding:** Learning rate is the most critical hyperparameter with a 10% accuracy swing.
+| Rank | Learning Rate | LoRA Rank | Epochs | Accuracy |
+|------|---------------|-----------|--------|----------|
+| 1 | **1e-4** | **8** | **5** | **85.32%** ⭐ |
+| 2 | 1e-4 | 16 | 5 | 85.32% |
+| 3 | 2e-4 | 16 | 3 | 85.16% |
+| 4 | 5e-5 | 32 | 5 | 85.01% |
+| 5 | 1e-4 | 32 | 5 | 85.01% |
+| 6 | 2e-4 | 8 | 5 | 84.85% |
+| 7 | 2e-4 | 8 | 3 | 84.70% |
+| 8 | 5e-5 | 16 | 5 | 84.70% |
+| 9 | 1e-4 | 16 | 3 | 84.54% |
+| 10 | 2e-4 | 32 | 3 | 84.39% |
+
+### Hyperparameter Sensitivity Analysis
+
+| Parameter | Sensitivity | Range | Optimal Value | Impact on Accuracy |
+|-----------|-------------|-------|---------------|-------------------|
+| **Learning Rate** | 🔴 HIGH | 1e-5 → 2e-4 | **1e-4** | ±10% |
+| **Epochs** | 🟡 MODERATE | 1 → 5 | **5** | ±2.5% |
+| **LoRA Rank** | 🟢 LOW | 8 → 32 | **8** | ±0.8% |
+
+**Key Finding:** Learning rate is the most critical hyperparameter. Higher learning rates (2e-4) work best for shorter training, while moderate rates (1e-4) excel with longer training (5 epochs).
 
 ---
 
-## 📈 Few-Shot Example Count Study (8 Experiments)
+## 📈 Extended Few-Shot Analysis (0-100 Examples)
 
 Testing how the number of examples affects few-shot prompting:
 
-| Model | Zero-Shot | 1-ex | 3-ex | 4-ex | 5-ex |
-|-------|-----------|------|------|------|------|
-| Llama-3-8B | **65.38%** | 47.76% | 49.61% | 52.86% | 50.54% |
-| SaulLM-54B | 67.39% | 54.40% | 66.31% | 59.51% | **67.70%** |
+### Few-Shot Sweep Results (LLaMA-3-8B)
+
+| # Examples | Accuracy | Δ vs Zero-Shot |
+|------------|----------|----------------|
+| 0 (Zero-Shot) | **67.23%** | baseline |
+| 5 | 65.07% | -2.16% |
+| 10 | 66.15% | -1.08% |
+| 20 | 64.91% | -2.32% |
+| 40 | 65.53% | -1.70% |
+| 60 | 60.43% | -6.80% |
+| 80 | 59.04% | -8.19% |
+| 100 | 53.94% | **-13.29%** |
 
 ### ⚠️ Key Finding: Few-Shot HURTS Performance!
 
-| Model | Zero-Shot | Best Few-Shot | Change |
-|-------|-----------|---------------|--------|
-| Llama-3-8B | 65.38% | 52.86% (4-ex) | **-12.52%** ⬇️ |
-| SaulLM-54B | 67.39% | 67.70% (5-ex) | +0.31% |
+**Important Negative Result:** Adding few-shot examples consistently decreases accuracy for LLaMA-3-8B, with performance dropping from 67.23% (zero-shot) to 53.94% (100 examples) - a 13.29 percentage point decrease.
 
-**Important Negative Result:** Adding few-shot examples decreases accuracy for Llama-3-8B by 12-17%.
+**Hypothesis:** Domain mismatch between generic few-shot examples and jurisdiction-specific Texas criminal court language causes the model to overfit to irrelevant patterns.
+
+---
+
+## 🔬 Stability Testing (10 Independent Runs)
+
+To verify reproducibility, we ran Chain-of-Thought prompting 10 times with different random seeds:
+
+| Run | Seed | Accuracy |
+|-----|------|----------|
+| 1 | 142 | 75.12% |
+| 2 | 242 | 75.43% |
+| 3 | 342 | 74.50% |
+| 4 | 442 | 74.34% |
+| 5 | 542 | 74.96% |
+| 6 | 642 | 74.34% |
+| 7 | 742 | 74.65% |
+| 8 | 842 | 75.58% |
+| 9 | 942 | 73.72% |
+| 10 | 1042 | 74.50% |
+
+| Statistic | Value |
+|-----------|-------|
+| **Mean** | 74.71% |
+| **Std Dev** | 0.56% |
+| **Min** | 73.72% |
+| **Max** | 75.58% |
+| **p-value** | < 0.001 |
+
+**Result:** Low standard deviation (0.56%) confirms high reproducibility.
+
+---
+
+## ✅ Human Verification (Cohen's Kappa)
+
+To validate annotation quality, two expert annotators independently labeled 600 sentences (100 per category):
+
+| Metric | Value |
+|--------|-------|
+| **Cohen's Kappa (κ)** | **0.85** (Almost Perfect) |
+| Direct Agreement | 87.3% |
+| Annotator 1 vs Model | 90.5% |
+| Annotator 2 vs Model | 87.8% |
+| Average Human-Model Agreement | 89.2% |
+| Total Disagreements | 76 (12.7%) |
+
+### Cohen's Kappa Interpretation Scale
+
+| Kappa Range | Interpretation |
+|-------------|----------------|
+| 0.81 - 1.00 | Almost Perfect ← **Ours: 0.85** |
+| 0.61 - 0.80 | Substantial |
+| 0.41 - 0.60 | Moderate |
+| 0.21 - 0.40 | Fair |
+| 0.00 - 0.20 | Slight |
 
 ---
 
@@ -165,30 +238,28 @@ Testing how the number of examples affects few-shot prompting:
 ## 🔬 Key Research Findings
 
 ### 1. Fine-tuning >> Prompting
-- Fine-tuned: **85.16%** vs Best Prompting: **75.89%**
-- Improvement: **+9.27%**
+- Fine-tuned: **85.32%** vs Best Prompting: **75.89%**
+- Improvement: **+9.43%**
 
 ### 2. General Models > Legal Models (Surprising!)
 - Llama-3-8B (General): 75.89%
 - SaulLM-54B (Legal): 72.80%
-- General-domain LLMs outperform legal-specific models due to better RLHF training.
+- General-domain LLMs outperform legal-specific models due to better instruction tuning.
 
 ### 3. Few-Shot Hurts Performance ⚠️
-- Few-shot decreases accuracy by 12-20% for Llama-3-8B
+- Few-shot decreases accuracy from 67.23% to 53.94% (100 examples)
 - **Important negative result** for legal NLP community
 
 ### 4. Chain-of-Thought is Best Prompting Strategy
-- For capable models: **CoT > Zero-Shot > Few-Shot**
-- Exception: Some legal models perform worse with CoT
+- For capable models (≥8B): **CoT > Zero-Shot > Few-Shot**
 
 ### 5. Learning Rate is Most Critical Hyperparameter
-- 10% accuracy swing (1e-5: 75% → 2e-4: 85%)
-- LoRA Rank has minimal impact (<1%)
+- ±10% accuracy swing across learning rates
+- LoRA Rank has minimal impact (±0.8%)
 
-### 6. Significant Domain Shift
-- Trial courts: Facts-dominated (62%)
-- Appellate courts: Rule/Law-dominated (28%)
-- Model transfers successfully despite domain shift
+### 6. Human Verification Confirms Quality
+- Cohen's Kappa κ = 0.85 (Almost Perfect Agreement)
+- 89.2% Human-Model Agreement
 
 ---
 
@@ -223,75 +294,43 @@ LAMUS/
 ├── .gitignore
 │
 ├── code/experiments/
-│   ├── A_run_4_models_1st.py              # Main prompting experiments (5 models)
+│   ├── A_run_4_models_1st.py              # Main prompting experiments
 │   ├── A_run_gemini_experiments_1st.py    # Gemini API experiments
 │   ├── B_run_saulm54b_all_prompts.py      # SaulLM-54B experiments
 │   ├── B_finetune_with_legalbench.py      # Llama fine-tuning
 │   ├── C_fintune_legalBERT.py             # LegalBERT fine-tuning
 │   ├── C_finetuning_ablation_v2.py        # Ablation study
 │   ├── C_analyze_all_Results.py           # Comprehensive analysis
-│   ├── D_train_best_model_no_trl.py       # Best model training (85.16%)
+│   ├── D_train_best_model_no_trl.py       # Best model training
 │   ├── D_label_all_courts.py              # Label all 8 court eras
-│   ├── E_analyze_all_courts.py            # All courts analysis & visualization
-│   ├── F_run_ablation_grid.py             # Complete ablation grid (10 experiments)
-│   ├── F_fewshot_examples_experiment.py   # Few-shot example count study
-│   ├── G_visualize_fewshot_results.py     # Few-shot visualization
-│   ├── H_create_all_visualizations.py     # Paper figures
-│   ├── J_upload_to_huggingface.py         # Upload to Hugging Face
-│   └── K_create_ablation_figure.py        # WikiSQL-style ablation figure
-│
-├── prompts/
-│   ├── Zero Shot Prompt.txt
-│   ├── Few Shot Prompt.txt
-│   ├── Few Shot (1 ex).txt
-│   ├── Few Shot (3 ex).txt
-│   ├── Few Shot (4 ex).txt
-│   ├── Few Shot (5 ex).txt
-│   └── CoT Shot Prompt.txt
+│   ├── E_analyze_all_courts.py            # All courts analysis
+│   ├── F_run_ablation_grid.py             # Complete 36-experiment grid
+│   ├── F_fewshot_examples_experiment.py   # Few-shot sweep (0-100)
+│   ├── O_stability_test_serene.py         # Stability testing (10 runs)
+│   ├── U_calculate_cohens_kappa.py        # Human verification analysis
+│   └── ...
 │
 ├── data/
 │   ├── train_final.csv                    # Training data (2,585 samples)
 │   └── test_final.csv                     # Test data (647 samples)
 │
 ├── results/
-│   ├── experiment_results_20251208_122200.json
-│   ├── saulm54b_all_results.json
-│   ├── gemini_results_20251208_132625.json
-│   ├── finetune_results.json
-│   ├── legalbert_results.json
+│   ├── experiment_results.json
 │   ├── ablation_results/
-│   │   ├── ablation_grid_results.json     # 10 ablation experiments
-│   │   └── ablation_grid_results.csv
-│   └── fewshot_examples_results/
-│       ├── fewshot_examples_results.json  # 8 few-shot experiments
-│       └── fewshot_examples_results.csv
+│   │   └── ablation_grid_results.csv      # 36 ablation experiments
+│   ├── fewshot_results/
+│   │   └── fewshot_sweep_results.csv      # 0-100 examples sweep
+│   └── stability_results/
+│       └── stability_10_runs.csv          # 10 independent runs
 │
 ├── scotus_labeled/
 │   ├── all_courts_labeled_FINAL.csv       # 2,900,083 labeled sentences
-│   ├── roberts_court_labeled_FINAL.csv    # 362,891 Roberts Court
-│   ├── burger_court_labeled_FINAL.csv     # 809,409 Burger Court
-│   ├── rehnquist_court_labeled_FINAL.csv  # 673,564 Rehnquist Court
-│   ├── warren_court_labeled_FINAL.csv     # 377,645 Warren Court
-│   ├── hughes_court_labeled_FINAL.csv     # 213,122 Hughes Court
-│   ├── vinson_court_labeled_FINAL.csv     # 170,975 Vinson Court
-│   ├── taft_court_labeled_FINAL.csv       # 155,066 Taft Court
-│   ├── stone_court_labeled_FINAL.csv      # 137,411 Stone Court
 │   └── analysis_all_courts/
-│       ├── label_distribution_all_courts.png
-│       ├── temporal_evolution.png
-│       ├── court_comparison_heatmap.png
-│       └── domain_shift_analysis.png
 │
-├── paper_figures/
-│   ├── ablation_figure_wikisql.pdf        # WikiSQL-style ablation
-│   ├── ablation_sensitivity_summary.pdf   # Hyperparameter sensitivity
-│   ├── fewshot_examples_figure.pdf        # Few-shot analysis
-│   ├── all_results_comparison.pdf         # All 30 experiments
-│   ├── prompting_comparison.pdf           # ZS vs FS vs CoT
-│   └── domain_shift_analysis.pdf          # Texas vs SCOTUS
-│
-└── docs/
-    └── LAMUS_FINAL_REPORT.pdf
+└── paper_figures/
+    ├── ablation_figure_final.png
+    ├── fewshot_sweep.png
+    └── ...
 ```
 
 ---
@@ -304,12 +343,13 @@ LAMUS/
 |-----------|-------|
 | Base Model | Meta-Llama-3-8B-Instruct |
 | Method | QLoRA (4-bit NF4 quantization) |
-| Learning Rate | 2e-4 |
-| LoRA Rank | 16 |
+| **Learning Rate** | **1e-4** |
+| **LoRA Rank** | **8** |
 | LoRA Alpha | 32 |
-| Epochs | 3 |
+| **Epochs** | **5** |
 | Target Modules | q_proj, v_proj |
-| Label Masking | ✅ Yes (critical for 85.16%) |
+| Label Masking | ✅ Yes |
+| **Accuracy** | **85.32%** |
 
 ### Hardware Used
 
@@ -318,7 +358,6 @@ LAMUS/
 | System | NVIDIA DGX Station |
 | GPUs | 4× Tesla V100-DGXS-32GB |
 | System RAM | 256GB |
-| Storage | 100GB+ for models and data |
 
 ### Software Dependencies
 
@@ -333,65 +372,6 @@ pandas>=2.0.0
 scikit-learn>=1.3.0
 matplotlib>=3.7.0
 seaborn>=0.12.0
-tqdm>=4.65.0
-huggingface_hub>=0.20.0
-```
-
----
-
-## 📊 Visualizations
-
-### Ablation Study (WikiSQL-style)
-![Ablation Study](paper_figures/ablation_figure_wikisql.png)
-
-### Few-Shot Example Count Analysis
-![Few-Shot Analysis](paper_figures/fewshot_examples_figure.png)
-
-### All Results Comparison
-![All Results](paper_figures/all_results_comparison.png)
-
-### Domain Shift: Texas vs SCOTUS
-![Domain Shift](paper_figures/domain_shift_analysis.png)
-
-### Prompting Strategy Comparison
-![Prompting Comparison](paper_figures/prompting_comparison.png)
-
----
-
-## 🚀 Quick Start
-
-### 1. Clone Repository
-```bash
-git clone https://github.com/yourusername/LAMUS.git
-cd LAMUS
-```
-
-### 2. Install Dependencies
-```bash
-pip install -r requirements.txt
-```
-
-### 3. Load Dataset from Hugging Face
-```python
-from datasets import load_dataset
-
-# Load full SCOTUS dataset
-dataset = load_dataset("LavanyaPobbathi/lamus-scotus-legal-arguments")
-
-# Or load Roberts Court only
-dataset = load_dataset("LavanyaPobbathi/lamus-roberts-court-legal-arguments")
-```
-
-### 4. Run Experiments
-```bash
-# Prompting experiments
-python code/experiments/A_run_4_models_1st.py
-
-# Fine-tuning
-python code/experiments/D_train_best_model_no_trl.py
-
-# Ablation study
-python code/experiments/F_run_ablation_grid.py
 ```
 
 ---
@@ -400,8 +380,8 @@ python code/experiments/F_run_ablation_grid.py
 
 ```bibtex
 @article{lamus2026,
-  title={LAMUS: Legal Argument Mining from U.S. Caselaw using Large Language Models},
-  author={Pobbathi, Lavanya and Wang, Serene and Chen, Haihua},
+  title={LAMUS: A Large-Scale Corpus for Legal Argument Mining from U.S. Caselaw using LLMs},
+  author={Wang, Serene and Pobbathi, Lavanya and Chen, Haihua},
   journal={[Conference/Journal Name]},
   year={2026},
   institution={University of North Texas}
@@ -412,7 +392,7 @@ python code/experiments/F_run_ablation_grid.py
 
 ## 📄 License
 
-The underlying Supreme Court opinions are in the **public domain** as U.S. government works.
+This project is licensed under the MIT License. The underlying Supreme Court opinions are in the **public domain** as U.S. government works.
 
 ---
 
@@ -429,7 +409,8 @@ The underlying Supreme Court opinions are in the **public domain** as U.S. gover
 ## 📧 Contact
 
 For questions or collaboration:
-- **Professor Haihua Chen** - University of North Texas
-- **Lavanya Pobbathi** - University of North Texas
-- **Serene Wang** - University of North Texas
+- **Professor Haihua Chen** (Corresponding Author) - haihua.chen@unt.edu
+- **Serene Wang** - SereneWang@my.unt.edu
+- **Lavanya Pobbathi** - LavanyaPobbathi@my.unt.edu
 
+University of North Texas, Denton, Texas, USA
