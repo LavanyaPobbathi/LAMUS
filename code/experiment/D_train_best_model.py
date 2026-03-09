@@ -31,7 +31,7 @@ import warnings
 warnings.filterwarnings('ignore')
 
 # ============================================
-HF_TOKEN = "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"
+HF_TOKEN = "HF_TOKEN_KEY"
 MODEL_NAME = "meta-llama/Meta-Llama-3-8B-Instruct"
 OUTPUT_DIR = "./best_model_85"  # Save best model here
 
