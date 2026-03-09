@@ -21,7 +21,7 @@ warnings.filterwarnings('ignore')
 # ============================================
 # UPDATE THIS WITH YOUR NEW GEMINI API KEY
 # ============================================
-GEMINI_API_KEY = "AIzaSyBFnBy2MHaY_atwTjCn8wcej-NND13JnBo"
+GEMINI_API_KEY = "API_KEY"
 # ============================================
 
 # Labels
