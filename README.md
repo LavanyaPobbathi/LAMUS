@@ -1,4 +1,4 @@
-# LAMUS: Legal Argument Mining from U.S. Caselaw using LLMs
+# LAMUS: A Large-Scale Corpus for Legal Argument Mining from U.S. Caselaw using LLMs
 
 <div align="center">
 
