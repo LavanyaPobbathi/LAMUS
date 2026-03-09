@@ -37,7 +37,7 @@ os.environ['TRANSFORMERS_CACHE'] = '/home/lavanya/.cache/huggingface'
 # ============================================
 # UPDATE THIS WITH YOUR HUGGINGFACE TOKEN
 # ============================================
-HF_TOKEN = "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"
+HF_TOKEN = "HF_TOKEN_KEY"
 # ============================================
 
 # Labels (matching Serene's format)
