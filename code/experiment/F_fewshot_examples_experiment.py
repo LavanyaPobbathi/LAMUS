@@ -45,7 +45,7 @@ os.environ.setdefault('HF_HOME', '/home/lavanya/.cache/huggingface')
 # ============================================
 # CONFIGURATION
 # ============================================
-HF_TOKEN = "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"
+HF_TOKEN = "HF_TOKEN_KEY"
 OUTPUT_DIR = "./fewshot_examples_results"
 MAX_LENGTH = 2048  # Longer for few-shot prompts
 MAX_NEW_TOKENS = 50
