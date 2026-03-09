@@ -38,7 +38,7 @@ warnings.filterwarnings("ignore")
 # =========================
 # CONFIG
 # =========================
-HF_TOKEN = "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"
+HF_TOKEN = "HF_TOKEN_KEY"
 MODEL_NAME = "meta-llama/Meta-Llama-3-8B-Instruct"
 
 BEST_MODEL_PATH = "./best_model_85"
