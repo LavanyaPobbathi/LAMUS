@@ -28,7 +28,7 @@ os.environ['HF_HOME'] = '/home/lavanya/.cache/huggingface'
 os.environ['TRANSFORMERS_CACHE'] = '/home/lavanya/.cache/huggingface'
 
 # ============================================
-HF_TOKEN = "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"
+HF_TOKEN = "HF_TOKEN_KEY"
 # ============================================
 
 LABELS = ['Facts', 'Issue', 'Rule/Law/Holding', 'Analysis', 'Conclusion', 'Others']
