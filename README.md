@@ -1,9 +1,9 @@
 # LAMUS: A Large-Scale Corpus for Legal Argument Mining from U.S. Caselaw using LLMs
 
-**Paper:** https://arxiv.org/abs/2603.08286
-
 <div align="center">
-
+    
+**Paper:** https://arxiv.org/abs/2603.08286
+    
 [![Paper](https://img.shields.io/badge/Paper-March%202026-blue)]()
 [![Best Accuracy](https://img.shields.io/badge/Best%20Accuracy-85.32%25-brightgreen)]()
 [![SCOTUS Dataset](https://img.shields.io/badge/SCOTUS%20Sentences-2.9M-orange)]()
